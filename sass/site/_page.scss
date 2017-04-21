@@ -1,0 +1,437 @@
+.subpage,
+.blog-list-page {
+  margin: 60px 0;
+
+}
+
+.subpage-page {
+  background: url('images/bg.png') repeat;
+  padding: 60px 0;
+
+}
+
+.text-container {
+  width: $max-width-textpage;
+  max-width: 100%;
+  margin: 0 auto;
+
+}
+
+.subpage-page-single,
+.subpage-post-single,
+.subpage-page-list {
+  padding-right: 30px;
+  padding-bottom: 100px;
+
+}
+
+
+.entry-title,
+.page-title {
+  font-family: $good-spirit;
+  @include font-size(48px);
+  line-height: 1.4em;
+  color: $gold;
+  padding: 0;
+  margin: 0 0 45px;
+
+}
+
+.single-post-item .entry-title {
+  margin: 0;
+
+}
+
+.subpage-page-single .entry-title {
+  text-align: center;
+  @include font-size(65px);
+
+}
+
+.entry-sub-title {
+  font-family: $roboto-slab-regular;
+  font-weight: normal;
+  @include font-size(25px);
+  color: $black-1;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  line-height: 1.3em;
+  text-align: center;
+
+}
+
+.article-info {
+  margin: 20px 0 30px;
+  padding: 10px;
+  border-top: 1px solid $gray-3;
+  border-bottom: 1px solid $gray-3;
+  color: darken($gold, 15%);
+  @include font-size(15px);
+
+  strong {
+    font-weight: normal;
+    font-family: $roboto-medium;
+    text-transform: lowercase;
+    color: darken($gold, 22%);
+
+  }
+
+}
+
+.entry-content {
+  @include font-size(19px);
+  line-height: 1.5em;
+  color: $black-1;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $good-spirit;
+    color: $gold;
+    line-height: 1.3em;
+
+  }
+
+  h2 {
+    @include font-size(42px);
+
+  }
+
+  h3 {
+    @include font-size(32px);
+
+  }
+
+  h4 {
+    @include font-size(22px);
+
+  }
+
+  h5 {
+    @include font-size(18px);
+
+  }
+
+  h6 {
+    @include font-size(16px);
+
+  }
+
+  .headline {
+    font-family: $roboto-medium;
+    @include font-size(22px);
+    color: darken($gold, 10%);
+    margin-bottom: 35px;
+
+  }
+
+  .psgal {
+    width: 100%!important;
+
+  }
+
+  p {
+    @include font-size(19px);
+    line-height: 1.5em;
+    color: $black-1;
+    text-align: left;
+
+  }
+
+  a {
+    color: $gold;
+
+    &:hover {
+      text-decoration: underline;
+
+    }
+
+  }
+
+  img {
+    max-width: 100%!important;
+    height: auto!important;
+
+  }
+
+  // Image classes
+  .aligncenter {
+    max-width: 100%;
+    display: block;
+    margin: 40px auto;
+
+  }
+
+  .alignleft {
+    max-width: 100%;
+    float: left;
+    padding: 20px 20px 20px 0;
+
+  }
+
+  .alignright {
+    max-width: 100%;
+    float: right;
+    padding: 20px 0 20px 20px;
+
+  }
+
+  .circle {
+    display: block;
+    @include border-radius(50%);
+    border: 10px solid $gray;
+
+  }
+
+  strong {
+    font-family: $roboto-bold;
+    font-weight: normal;
+
+  }
+
+  ul, ol {
+    margin-top: 0;
+    margin-left: 1.2em;
+    margin-bottom: 30px;
+    padding: 0;
+
+    li {
+      position: relative;
+      list-style: none;
+      margin: 5px 0 8px;
+      padding-left: 0.5em;
+
+      &::before {
+        position: absolute;
+        top: -1px;
+        left: -1em;
+        content: '»';
+        color: $gold;
+        @include font-size(20px);
+        font-family: $roboto-bold;
+
+      }
+
+    }
+
+  }
+
+  figure {
+    margin: 30px 0 100px;
+    width: 100%;
+    max-width: 100%;
+
+  }
+
+  table {
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    &.bordered  {
+      border: 1px solid $gray-1;
+
+      td {
+        border: 1px solid $gray-1;
+
+      }
+
+    }
+
+
+    td {
+      padding: 5px;
+
+    }
+
+  }
+
+  blockquote {
+    background: lighten($gold, 50%) none repeat scroll 0 0;
+    border-left: 5px solid lighten($gold, 20%);
+    color: darken($gold, 10%);
+    font-size: 1.125rem;
+    line-height: 1.5em;
+    margin: 20px 0;
+    overflow-wrap: break-word;
+    padding: 20px 15px;
+    white-space: pre-wrap;
+
+    &::before,
+    &::after {
+      content: none;
+
+    }
+
+    p {
+      margin: 0;
+      padding: 0;
+
+    }
+
+  }
+
+  pre {
+    background: lighten($gold, 15%) none repeat scroll 0 0;
+    border-left: 5px solid $gold;
+    color: darken($gold, 10%);
+    font-size: 1.125rem;
+    line-height: 1.5em;
+    margin: 1em 0;
+    overflow-wrap: break-word;
+    padding: 15px;
+    white-space: pre-wrap;
+
+  }
+
+}
+
+.no-result {
+
+  strong {
+    font-family: $roboto-bold;
+    font-weight: normal;
+    @include font-size(19px);
+    line-height: 1.5em;
+    color: $black-1;
+
+  }
+
+}
+
+@include screen($null, $sm) {
+
+  .subpage {
+    .container {
+      padding: 0 15px;
+
+    }
+
+  }
+
+  .subpage-page-single {
+    margin-bottom: 100px;
+
+  }
+
+
+  .entry-title,
+  .page-title {
+    @include font-size(35px);
+    margin: 0 0 40px;
+
+  }
+
+  .entry-content {
+    @include font-size(15px);
+
+
+    h2 {
+      @include font-size(27px);
+
+    }
+
+    h3 {
+      @include font-size(24px);
+
+    }
+
+    h4 {
+      @include font-size(21px);
+
+    }
+
+    h5 {
+      @include font-size(18px);
+
+    }
+
+    h6 {
+      @include font-size(16px);
+
+    }
+
+    .headline {
+      @include font-size(19px);
+
+    }
+
+
+    p {
+      @include font-size(15px);
+
+    }
+
+  }
+
+}
+
+@include screen(($sm + 1), $xl) {
+
+  .subpage {
+    .container {
+      padding: 0 15px;
+
+    }
+
+  }
+
+  .subpage-page-single {
+    margin-bottom: 100px;
+
+  }
+
+
+  .entry-title,
+  .page-title {
+    @include font-size(40px);
+    margin: 0 0 40px;
+
+  }
+
+  .entry-content {
+    @include font-size(16px);
+
+
+    h2 {
+      @include font-size(35px);
+
+    }
+
+    h3 {
+      @include font-size(30px);
+
+    }
+
+    h4 {
+      @include font-size(25px);
+
+    }
+
+    h5 {
+      @include font-size(20px);
+
+    }
+
+    h6 {
+      @include font-size(18px);
+
+    }
+
+    .headline {
+      @include font-size(19px);
+
+    }
+
+
+    p {
+      @include font-size(16px);
+
+    }
+
+  }
+
+}

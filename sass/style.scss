@@ -1,0 +1,59 @@
+/*!
+Theme Name: KV Alap Theme
+Theme URI: http://kreativvonalak.hu
+Description: Individual project template
+Author: Kreatív Vonalak
+Author URI: http://kreativvonalak.hu
+Version: 1.0.0
+
+License: All right reserved!
+License URI: http://kreativvonalak.hu
+
+Tags:
+*/
+
+// Include main variables
+@import 'helpers/variables';
+
+// Include mixins, functions
+@import 'mixins/mixin';
+
+
+// Include normalize css
+@include normalize;
+
+
+// Include Font-Awsome icon fonts
+@import 'extensions/font_awesome/font-awesome';
+
+// Include Socicon The social icon font - http://www.socicon.com/chart.php
+@import 'helpers/socicon';
+
+// Include websymbol font - https://www.fontsquirrel.com/fonts/web-symbols
+@import 'helpers/websymbol';
+
+
+// Import grid layout (percentage based)
+@import 'layout/fluid-grid';
+@import 'layout/grid';
+
+// Import font families
+@import 'helpers/font-faces';
+
+// Import basic elements style
+@import 'elements/elements';
+
+// Import typography elements style
+@import 'typography/typography';
+
+// Import navigation elements style
+@import 'navigation/navigation';
+
+// Import form elements style
+@import 'forms/forms';
+
+// Import media elements style
+@import 'media/media';
+
+// Import site elements style
+@import 'site/site';

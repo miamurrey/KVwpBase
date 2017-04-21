@@ -1,0 +1,230 @@
+footer {
+  margin-top: 8px;
+
+  .footer-top {
+    background-color: $black;
+    border-bottom: 1px solid $gray-2;
+
+    .footer-top_left {
+      border-right: 1px solid $gray-2;
+
+      .footer-logo {
+        margin-top: 64px;
+        margin-bottom: 80px;
+
+      }
+
+      .footer-contents {
+        margin-top: 110px;
+
+      }
+
+      .footer-menu {
+
+        ul {
+          margin: 0;
+          padding: 0;
+
+          li {
+            display: block;
+            padding-bottom: 8px;
+
+            &.current-menu-item a,
+            &.current_page_item a {
+              color: $gold;
+
+            }
+
+            a {
+              @include font-size(17px);
+              color: $white;
+
+              &:hover {
+                color: $gold;
+
+              }
+
+            }
+
+          }
+
+        }
+
+      }
+
+      .mini-social {
+        margin: 50px 0 0;
+        padding: 0;
+        display: block;
+
+        li {
+          display: inline-block;
+          margin-right: 8px;
+
+          &:last-child {
+            margin-right: 0;
+
+          }
+
+          a {
+            display: block;
+            width: 34px;
+            height: 34px;
+            @include border-radius(50%);
+            background-color: $gray-1;
+            color: $black;
+            text-align: center;
+            @include font-size(20px);
+            line-height: 38px;
+            @include transition(all .3s ease);
+
+            &.facebook:hover {
+              background-color: $bc-facebook;
+              color: $white;
+
+            }
+
+            &.tripadvisor:hover {
+              background-color: $bc-tripadvisor;
+              color: $white;
+
+            }
+
+            &.youtube:hover {
+              background-color: $bc-youtube;
+              color: $white;
+
+            }
+
+            &.twitter:hover {
+              background-color: $bc-twitter;
+              color: $white;
+
+            }
+
+            &.instagram:hover {
+              background-color: $bc-instagram;
+              color: $white;
+
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+    .footer-top_right {
+
+      .newsletter-box {
+        padding: 110px 0 0 48px;
+
+        .form-wrapper {
+          margin-top: 30px;
+
+        }
+
+        input[type="email"] {
+          background-color: $white;
+          color: $black-1;
+          @include font-size(17px);
+          border: 1px solid transparent;
+          padding: 12px 20px;
+          margin-top: 0;
+          width: auto;
+
+          &:focus {
+            border-color: $gold;
+
+          }
+
+        }
+
+        button {
+          border: 0;
+          color: $white;
+          background-color: $gold;
+          @include font-size(20px);
+          padding: 11px 20px 13px;
+          margin-left: -5px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: darken($gold, 10%);
+
+          }
+
+        }
+
+      }
+
+      h3 {
+        font-family: $good-spirit;
+        font-weight: normal;
+        @include font-size(20px);
+        color: $gold;
+        line-height: 1.3em;
+        margin: 0 0 10px;
+        padding: 0;
+
+      }
+
+      p {
+        @include font-size(17px);
+        color: $white;
+        line-height: 1.3em;
+        margin: 0;
+        padding: 0;
+
+      }
+
+
+    }
+
+  }
+
+  .footer-bottom {
+    padding: 20px 0;
+    background-color: $black;
+
+    .footer-bootom-left {
+      text-align: right;
+
+      p {
+        padding-right: 40px;
+
+      }
+
+    }
+
+    .footer-bootom-right {
+      text-align: left;
+
+      p {
+        padding-right: 40px;
+
+      }
+
+    }
+
+    p {
+      @include font-size(17px);
+      color: $gray-1;
+
+      a {
+        color: $gray-1;
+
+        &:hover {
+          color: $gold;
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

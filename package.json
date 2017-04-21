@@ -1,0 +1,19 @@
+{
+  "name": "kreativdev",
+  "version": "1.0.0",
+  "description": "KV WP Theme development",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-line-ending-corrector": "^1.0.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-clean-css": "^2.0.13"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Istvan Krucsanyica @Kreatív Vonalak"
+}

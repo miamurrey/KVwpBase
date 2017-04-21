@@ -1,0 +1,181 @@
+.main-navigation {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+
+
+}
+
+#fejlec-menu-left,
+#fejlec-menu-right {
+  margin: 0;
+  padding: 0;
+
+  li {
+    display: inline-block;
+    color: $white;
+
+    a {
+      font-family: $roboto-bold;
+      font-weight: normal;
+      color: $white;
+      text-transform: uppercase;
+      @include font-size(19px);
+      @include transition(all .3s ease);
+      border-bottom: 2px solid transparent;
+
+      &:hover {
+        color: $gold;
+        border-bottom-color: $gold;
+
+      }
+
+    }
+
+    &.current-menu-item {
+      a {
+        color: $gold;
+        border-bottom-color: $gold;
+
+      }
+
+    }
+
+  }
+
+}
+
+#fejlec-menu-left {
+  text-align: left;
+  margin: 95px 0 0;
+
+  li {
+    margin-right: 30px;
+
+    &::last-child  {
+      margin-right: 0;
+
+    }
+
+  }
+
+}
+
+#fejlec-menu-right {
+  text-align: right;
+  margin: 45px 0 0;
+
+    li {
+      margin-left: 30px;
+
+      &::last-child  {
+        margin-left: 0;
+
+      }
+
+    }
+
+}
+
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+
+	}
+
+}
+
+@include screen(($xl + 1), $xxl) {
+
+  #fejlec-menu-left,
+  #fejlec-menu-right {
+
+    li {
+
+      a {
+        @include font-size(16px);
+
+      }
+
+    }
+
+  }
+
+  #fejlec-menu-left {
+    margin: 85px 0 0;
+
+    li {
+      margin-right: 10px;
+
+    }
+
+  }
+
+  #fejlec-menu-right {
+    margin: 35px 0 0;
+
+    li {
+      margin-left: 10px;
+
+    }
+
+  }
+
+}
+
+@include screen(($xxl + 1), $xxxl) {
+
+  #fejlec-menu-left,
+  #fejlec-menu-right {
+
+    li {
+
+      a {
+        @include font-size(17px);
+
+      }
+
+    }
+
+  }
+
+  #fejlec-menu-left {
+    margin: 85px 0 0;
+
+    li {
+      margin-right: 20px;
+
+    }
+
+  }
+
+  #fejlec-menu-right {
+    margin: 35px 0 0;
+
+    li {
+      margin-left: 20px;
+
+    }
+
+  }
+
+}

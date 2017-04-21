@@ -1,0 +1,95 @@
+// Base config
+$base-fontsize:             16px;
+$base-color:                #000000;
+$base-bacground-color:      #ffffff;
+
+
+// Site content max width
+$max-width-content:         1240;
+$max-width-content-px:      1240 + 'px';
+$max-width-textpage:        1020px;
+
+$cover-image-height:        908px;
+$cover-image-height-page:   862px;
+$blog-item-width:           385px;
+$animated-section-height:   1050px;
+
+// Project main font family
+$good-spirit:               'GoodSpirit';
+
+// Roboto font family
+$roboto-regular:            'RobotoRegular';
+$roboto-medium:             'RobotoMedium';
+$roboto-bold:               'RobotoBold';
+$roboto-slab-regular:       'RobotoSlabRegular';
+
+// Social icon font
+$socicon:                   'socicon';
+
+// Websymbols
+$websymbol:                 'websymbols-regular-webfont';
+
+// Set font family list
+$font-family-list:          $good-spirit $roboto-regular $roboto-medium $roboto-bold $roboto-slab-regular;
+
+// Set Base font family
+$base-font-family:          $roboto-regular;
+
+// Colors
+$white:                      #ffffff;
+
+$black:                      #000000;
+$black-1:                    #030000;
+
+$gray:                       #808080;
+$gray-1:                     #4f4f4f;
+$gray-2:                     #313131;
+$gray-3:                     #cccccc;
+$gray-4:                     #202020;
+
+$gold:                       #ab5e24;
+
+$bc-facebook:                #3b5998;
+$bc-spotify:                 #2ebd59;
+$bc-youtube:                 #cd201f;
+$bc-google-plus:             #dd4b39;
+$bc-twitter:                 #1da1f2;
+$bc-tripadvisor:             #589442;
+$bc-instagram:               #405de6;
+
+
+// Grid variables - Based on Bootstrap 3 grid system
+$screen-xs:                  480px !default;
+$screen-xs-min:              $screen-xs !default;
+$screen-phone:               $screen-xs-min !default;
+$screen-sm:                  768px !default;
+$screen-sm-min:              $screen-sm !default;
+$screen-tablet:              $screen-sm-min !default;
+$screen-md:                  992px !default;
+$screen-md-min:              $screen-md !default;
+$screen-desktop:             $screen-md-min !default;
+$screen-lg:                  1200px !default;
+$screen-lg-min:              $screen-lg !default;
+$screen-lg-desktop:          $screen-lg-min !default;
+$screen-xs-max:              ($screen-sm-min - 1) !default;
+$screen-sm-max:              ($screen-md-min - 1) !default;
+$screen-md-max:              ($screen-lg-min - 1) !default;
+$grid-columns:               12 !default;
+$grid-gutter-width:          30px !default;
+$container-tablet:           (720px + $grid-gutter-width) !default;
+$container-sm:               $container-tablet !default;
+$container-desktop:          (940px + $grid-gutter-width) !default;
+$container-md:               $container-desktop !default;
+$container-large-desktop:    (($max-width-content - $grid-gutter-width) + $grid-gutter-width) !default;
+$container-lg:               $container-large-desktop !default;
+
+
+// Breakpoints for media queries
+$null:                       0px;
+$xs:                         320px;
+$sm:                         480px;
+$md:                         768px;
+$lg:                         992px;
+$xl:                         1200px;
+$xxl:                        1400px;
+$xxxl:                       1775px;

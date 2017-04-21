@@ -1,0 +1,241 @@
+header {
+  position: relative;
+
+  .header_top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+    .logo {
+      background: url('images/logo_bg.png') no-repeat center top;
+      background-size: 100% 100%;
+      text-align: center;
+
+    }
+
+  }
+
+  .switch-language {
+    padding-top: 25px;
+
+    a {
+      font-family: $roboto-bold;
+      @include font-size(16px);
+      color: $gold;
+      text-transform: uppercase;
+      margin: 0;
+      border-bottom: 1px solid transparent;
+
+      &.current,
+      &:hover {
+        border-color: $gold;
+
+      }
+
+    }
+
+    .sep {
+      font-family: $roboto-bold;
+      @include font-size(16px);
+      color: $gold;
+      margin: 0 5px;
+
+      &:last-child {
+        display: none;
+
+      }
+
+    }
+
+  }
+
+  &#mainpage-header {
+
+    .cover-image {
+      position: relative;
+      width: 100%;
+      height: $cover-image-height;
+      background: url('images/header_cover.jpg') no-repeat center center;
+
+      .header_text {
+        text-align: center;
+        padding-top: 490px;
+
+        h1 {
+          font-family: $good-spirit;
+          font-weight: normal;
+          @include font-size(97px);
+          color: $white;
+          margin: 0;
+          padding: 0;
+          line-height: 1.3em;
+          text-transform: uppercase;
+
+        }
+
+        h2 {
+          font-family: $good-spirit;
+          font-weight: normal;
+          @include font-size(35px);
+          text-transform: uppercase;
+          color: $white;
+          margin: 10px 0 0;
+          padding: 0;
+          line-height: 1.3em;
+
+          &::before,
+          &::after {
+            position: relative;
+            top: -3px;
+
+          }
+
+          &::before {
+            content: url('images/elvalaszto_left.png');
+            margin-right: 15px;
+
+          }
+
+          &::after {
+            content: url('images/elvalaszto_right.png');
+            margin-left: 15px;
+
+          }
+
+        }
+
+      }
+
+      .circle-arrow {
+        width: 66px;
+        height: 65px;
+        position: absolute;
+        bottom: 100px;
+        left: 50%;
+        margin-left: -33px;
+        cursor: pointer;
+
+      }
+
+    }
+
+  }
+
+  &#page-header-cover {
+
+    .cover-image {
+      position: relative;
+      width: 100%;
+      height: $cover-image-height-page;
+      background-repeat: no-repeat;
+      background-position: center center;
+
+      .header_text {
+        text-align: center;
+        padding-top: 380px;
+
+        h2 {
+          font-family: $good-spirit;
+          font-weight: normal;
+          @include font-size(97px);
+          text-transform: uppercase;
+          color: $white;
+          margin: 0;
+          padding: 0;
+          line-height: 1.3em;
+
+        }
+
+        hr {
+          width: 145px;
+          height: 8px;
+          border: 0;
+          background-image: url('images/hr_bg.png');
+          margin: 40px auto 60px;
+
+        }
+
+        p {
+          font-family: $roboto-medium;
+          font-weight: normal;
+          @include font-size(21px);
+          color: $white;
+          margin: 0 auto;
+          padding: 0;
+          width: 600px;
+          line-height: 1.3em;
+
+        }
+
+      }
+
+    }
+
+  }
+
+  &#page-header-small {
+    background-image: url('images/page_drink_cover.jpg');
+    background-position: center;
+    height: 300px;
+
+  }
+
+}
+
+@include screen(($xl + 1), $xxxl) {
+
+  header {
+
+    &#mainpage-header {
+
+      .cover-image {
+        height: $cover-image-height - 100px;
+
+        .header_text {
+          padding-top: 300px;
+
+          h1 {
+            @include font-size(87px);
+
+          }
+
+          h2 {
+            @include font-size(30px);
+
+          }
+
+        }
+
+      }
+
+    }
+
+    &#page-header-cover {
+
+      .cover-image {
+        height: $cover-image-height-page - 100px;
+
+        .header_text {
+          padding-top: 300px;
+
+          h2 {
+            @include font-size(87px);
+
+          }
+
+          p {
+            @include font-size(19px);
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

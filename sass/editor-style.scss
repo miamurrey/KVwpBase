@@ -1,0 +1,271 @@
+@import 'helpers/variables';
+@import 'mixins/mixin';
+@import 'helpers/font-faces';
+
+//@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
+
+body {
+  background: $white;
+  color: $black-1;
+  font-family: $roboto-regular;
+  font-weight: 400;
+  line-height: 1.5em;
+  @include font-size($base-fontsize);
+  margin: 0 auto;
+  max-width: $max-width-textpage;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both;
+  font-weight: normal;
+  font-family: $good-spirit;
+}
+
+p {
+  margin-bottom: 1.5em;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  outline: 0;
+
+  &:focus {
+    outline: none!important;
+
+  }
+
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+strong {
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $gold;
+  line-height: 1.3em;
+
+}
+
+h2 {
+  @include font-size(42px);
+
+}
+
+h3 {
+  @include font-size(32px);
+
+}
+
+h4 {
+  @include font-size(22px);
+
+}
+
+h5 {
+  @include font-size(18px);
+
+}
+
+h6 {
+  @include font-size(16px);
+
+}
+
+.headline {
+  font-family: $roboto-regular;
+  font-weight: 700;
+  @include font-size(19px);
+  color: $gray-2;
+  margin-bottom: 35px;
+
+}
+
+.psgal {
+  width: 100%!important;
+
+}
+
+p {
+  @include font-size(19px);
+  line-height: 1.5em;
+  color: $black-1;
+  text-align: left;
+
+}
+
+a {
+  color: $gold;
+
+  &:hover {
+    text-decoration: underline;
+
+  }
+
+}
+
+img {
+  max-width: 100%!important;
+  height: auto!important;
+
+}
+
+// Image classes
+.aligncenter {
+  max-width: 100%;
+  display: block;
+  margin: 20px auto;
+
+}
+
+.alignleft {
+  max-width: 100%;
+  float: left;
+  padding: 20px 20px 20px 0;
+
+}
+
+.alignright {
+  max-width: 100%;
+  float: right;
+  padding: 20px 0 20px 20px;
+
+}
+
+.circle {
+  display: block;
+  @include border-radius(50%);
+  border: 10px solid $gray;
+
+}
+
+strong {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+
+}
+
+ul, ol {
+  margin-top: 0;
+  margin-left: 1.2em;
+  margin-bottom: 30px;
+  padding: 0;
+
+  li {
+    position: relative;
+    list-style: none;
+    margin: 5px 0 8px;
+    padding-left: 0.5em;
+
+    &::before {
+      position: absolute;
+      top: -1px;
+      left: -1em;
+      content: '»';
+      color: $gold;
+      @include font-size(20px);
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+
+    }
+
+  }
+
+}
+
+figure {
+  margin: 30px 0 100px;
+  width: 100%;
+  max-width: 100%;
+
+}
+
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+
+  &.bordered  {
+    border: 1px solid $gray-1;
+
+    td {
+      border: 1px solid $gray-1;
+
+    }
+
+  }
+
+
+  td {
+    padding: 5px;
+
+  }
+
+}
+
+blockquote {
+  background: lighten($gold, 30%) none repeat scroll 0 0;
+  border-left: 5px solid $gold;
+  color: darken($gold, 10%);
+  font-size: 1.125rem;
+  line-height: 1.5em;
+  margin: 20px 0;
+  overflow-wrap: break-word;
+  padding: 20px 15px;
+  white-space: pre-wrap;
+
+  &:before,
+  &:after {
+    content: none;
+
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+
+  }
+
+}
+
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+
+  img[class*="wp-image-"] {
+    @include center-block;
+
+  }
+
+  .wp-caption-text {
+    margin: 0.8075em 0;
+
+  }
+
+}
+
+.wp-caption-text {
+  text-align: center;
+  font-family: $roboto-regular;
+  font-weight: normal;
+  font-style: italic;
+  @include font-size(14px);
+  color: $gray;
+
+}

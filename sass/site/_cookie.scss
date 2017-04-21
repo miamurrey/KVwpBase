@@ -1,0 +1,101 @@
+#cookie-notice {
+  background-color: $black!important;
+  padding: 15px 0;
+  color: $white!important;
+
+  .cookie-notice-container {
+
+    #cn-notice-text {
+      font-family: $roboto-regular;
+      @include font-size(15px);
+
+    }
+
+    #cn-accept-cookie {
+      background-color: $gold;
+      color: $white;
+      padding: 6px 12px;
+      @include border-radius(0);
+
+      &:hover {
+        background-color: darken($gold, 10%);
+
+      }
+
+    }
+
+  }
+
+}
+
+@include screen($null, $sm) {
+
+  #cookie-notice {
+
+    .cookie-notice-container {
+
+      #cn-notice-text {
+        display: block;
+        @include font-size(14px);
+
+      }
+
+      #cn-accept-cookie {
+        display: inline-block;
+        margin-top: 8px;
+
+      }
+
+    }
+
+  }
+
+}
+
+@include screen(($sm + 1), $md) {
+
+  #cookie-notice {
+
+    .cookie-notice-container {
+
+      #cn-notice-text {
+        display: block;
+        @include font-size(14px);
+
+      }
+
+      #cn-accept-cookie {
+        display: inline-block;
+        margin-top: 10px;
+
+      }
+
+    }
+
+  }
+
+}
+
+@include screen(($lg + 1), $xl) {
+
+  #cookie-notice {
+
+    .cookie-notice-container {
+
+      #cn-notice-text {
+        display: block;
+        @include font-size(14px);
+
+      }
+
+      #cn-accept-cookie {
+        display: inline-block;
+        margin-top: 10px;
+
+      }
+
+    }
+
+  }
+
+}

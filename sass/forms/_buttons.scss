@@ -1,0 +1,56 @@
+.btn {
+  font-family: $roboto-bold;
+  font-weight: normal;
+  @include font-size(19px);
+  padding: 16px 50px;
+  @include transition(all .3s ease);
+  cursor: pointer;
+
+  &.btn-small {
+    @include font-size(16px);
+    padding: 10px 30px;
+
+  }
+
+  &.btn-inlineblock {
+    display: inline-block;
+
+  }
+
+  &.btn-rounded {
+    @include border-radius(30px);
+
+  }
+
+  &.btn-allcaps {
+    text-transform: uppercase;
+
+  }
+
+  &.btn-transparent-white {
+    border: 1px solid $white;
+    background-color: transparent;
+    color: $white;
+
+    &:hover {
+      background-color: $gold;
+      border-color: $gold;
+
+    }
+
+  }
+
+  &.btn-transparent {
+    border: 1px solid $gold;
+    background-color: transparent;
+    color: $gold;
+
+    &:hover {
+      background-color: $gold;
+      color: $white;
+
+    }
+
+  }
+
+}

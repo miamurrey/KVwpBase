@@ -1,0 +1,99 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+  -webkit-appearance: none;
+  @include border-radius(0);
+
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="number"],
+textarea {
+  background-color: transparent;
+  color: $gray;
+  @include font-size(19px);
+  border: 1px solid $gray-3;
+  margin-top: 10px;
+  padding: 16px 17px;
+  width: 100%;
+
+  &:focus {
+    border-color: $black-1;
+
+  }
+
+  &.wpcf7-not-valid {
+    border-color: $bc-youtube;
+
+    &:focus {
+      border-color: $black-1;
+
+    }
+
+  }
+
+}
+
+input[type="submit"] {
+  background-color: $gold;
+  color: $white;
+  border: 0;
+  @include font-size(19px);
+  margin-top: 20px;
+  padding: 16px 50px;
+  cursor: pointer;
+  @include border-radius(30px);
+  @include transition(all .7s ease);
+
+  &:hover {
+    color: $white;
+    background-color: $black-1;
+
+  }
+
+}
+
+.wpcf7-not-valid-tip {
+  font-size: 13px!important;
+  color: $bc-youtube;
+  margin-top: 3px;
+
+}
+
+.wpcf7-response-output {
+  text-align: center;
+  border:  0!important;
+  background-color: $gold;
+  color: $white;
+  font-size: 14px!important;
+
+}
+
+.wpcf7-recaptcha {
+  margin-top: 20px;
+
+}
+
+
+div.wpcf7 {
+  border: 1px solid $gold;
+  padding: 20px;
+
+}
+
