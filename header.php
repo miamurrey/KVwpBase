@@ -4,8 +4,8 @@
 
   <meta charset="utf-8" />
   <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=9,chrome=1"><![endif]-->
-  <meta name="author" content="<?php wp_title( '|', true, 'right' ); ?>">
-  <meta name="DC.title" <?php language_attributes(); ?> content="<?php wp_title( '|', true, 'right' ); ?>">
+  <meta name="author" content="<?php bloginfo( 'name' ); ?>">
+  <meta name="DC.title" lang="<?php bloginfo( 'language' ); ?>" content="<?php ( is_home() ) ? bloginfo( 'name' ) : wp_title( '|', true, 'right' ); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <link rel="profile" href="http://gmpg.org/xfn/11">
 
@@ -18,5 +18,5 @@
   <body <?php body_class(); ?>>
 
 <header>
-  
+
 </header>
